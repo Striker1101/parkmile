@@ -1,0 +1,121 @@
+/* Layout 2744 */
+#pg-2744-3,
+#pg-2744-4 {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+
+#pgc-2744-3-0,
+#pgc-2744-3-1,
+#pgc-2744-3-2,
+#pgc-2744-4-0,
+#pgc-2744-4-1,
+#pgc-2744-4-2 {
+  width: 400px;
+  margin: 20px;
+}
+
+#pgc-2744-0-0,
+#pgc-2744-1-0,
+#pgc-2744-2-0 {
+  width: 100%;
+  width: calc(100% - (0 * 30px));
+  margin: 20px;
+}
+
+#pg-2744-0 {
+  margin-bottom: 94px;
+}
+
+#pg-2744-1 {
+  margin-bottom: 60px;
+}
+
+#pg-2744-2,
+#pg-2744-3,
+#pg-2744-4,
+#pl-2744 .so-panel {
+  margin-bottom: 30px;
+}
+
+#pgc-2744-5-1 {
+  width: 33.8918%;
+  width: calc(33.8918% - (0.6610824742268 * 90px));
+}
+
+#pl-2744 #panel-2744-5-1-0 {
+  margin: -30px 0px 0px 0px;
+}
+
+#pl-2744 .so-panel:last-of-type {
+  margin-bottom: 0px;
+}
+
+#pg-2744-0 > .panel-row-style {
+  background-color: #176cc1;
+  padding: 22px 0px 22px 0px;
+  margin-top: -5rem;
+}
+
+#panel-2744-0-0-0 a {
+  color: #d7eff7;
+}
+
+#panel-2744-1-0-1 > .panel-widget-style {
+  margin-top: -45px;
+}
+
+#pg-2744-5 > .panel-row-style {
+  background-image: url(https://omalleymarineplant.ie/wp-content/uploads/2018/12/bg1.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  padding: 90px 0px 60px 0px;
+  background-size: cover;
+}
+
+#panel-2744-5-0-0 > .panel-widget-style,
+#panel-2744-5-0-0 a {
+  color: #ffffff;
+}
+
+@media (max-width: 500px) {
+  #pgc-2744-3-0,
+  #pgc-2744-3-1,
+  #pgc-2744-4-0,
+  #pgc-2744-4-1,
+  #pgc-2744-5-0 {
+    margin-bottom: 30px;
+  }
+  #pl-2744 .panel-grid-cell {
+    padding: 0;
+  }
+  #pl-2744 .panel-grid .panel-grid-cell-empty {
+    display: none;
+  }
+  #pl-2744 .panel-grid .panel-grid-cell-mobile-last {
+    margin-bottom: 0px;
+  }
+}
+
+#panel-2750 {
+  display: flex;
+  align-items: center;
+  width: 100vw;
+  justify-content: center;
+}
+
+#ngg-slideshow {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+#ngg-image-0 {
+  display: none;
+}
+#ngg-image-2 {
+  display: none;
+}

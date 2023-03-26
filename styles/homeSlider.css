@@ -1,0 +1,25 @@
+/*** Home slider customising ***/
+
+.fa-chevron-right::before {
+  display: none;
+}
+
+.fa-chevron-left::before {
+  display: none;
+}
+
+.pt-slick-carousel .slick-arrow {
+  font-size: 1.4rem;
+}
+
+.pt-slick-carousel__content-title {
+  text-shadow: 2px 2px 3px #000000;
+}
+
+.vessels h2 {
+  margin-bottom: 0px !important;
+}
+
+.vessels p {
+  margin-bottom: 0px !important;
+}
