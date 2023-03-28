@@ -1,3 +1,5 @@
+export const navPoint = "nav";
+
 export const carosal_image = [
   {
     src: "/carosal/img1.jpg",

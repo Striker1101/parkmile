@@ -1,12 +1,14 @@
 import Head from "next/head";
-import Image from "next/image";
 import { Inter } from "next/font/google";
 import Carosal from "@/comp/Carosal";
 import HomeContent from "@/comp/HomeContent";
-
+import { useDispatch } from "react-redux";
+import { navheader } from "@/redux/action";
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
+  const dispatch = useDispatch();
+  dispatch(navheader("home"));
   return (
     <>
       <Head>

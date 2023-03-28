@@ -3,7 +3,7 @@ import { Inter } from "next/font/google";
 import Image from "next/image";
 import Link from "next/link";
 const inter = Inter({ variable: "--inter-font", subsets: ["latin"] });
-function HomeContent(props) {
+function HomeContent() {
   return (
     <div
       className={inter.variable}
@@ -390,14 +390,14 @@ function HomeContent(props) {
                           chat about your requirements.
                         </p>
                         <p>&nbsp;</p>
-                        <a
+                        <Link
                           class="btn  btn-dark"
                           href="/contact/"
                           target="_self"
                         >
                           {" "}
                           Contact Us
-                        </a>
+                        </Link>
                       </div>
                     </div>
                   </div>

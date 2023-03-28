@@ -1,8 +1,9 @@
 import React, { useEffect, useRef } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import Links from "./Links";
 
-function Nav(props) {
+function Nav() {
   const btn = useRef();
   const sub_btn = useRef();
   useEffect(() => {
@@ -124,7 +125,6 @@ function Nav(props) {
           </div>
         </div>
       </div>
-      <div class="container"></div>
     </header>
   );
 }

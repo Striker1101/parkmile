@@ -44,23 +44,21 @@ export default function Carosal() {
           >
             {carosal_image.map((item, i) => {
               return (
-                <>
-                  <div
-                    key={i}
-                    class="slide-item"
-                    data-slick-index={item.index}
-                    aria-hidden={item.hidden}
-                    style={{ width: "100%" }}
-                    tabIndex={item.tabIndex}
-                  >
-                    <img
-                      src={item.src}
-                      srcSet={item.setsrc}
-                      alt="The Marine Plant Experts in Ireland the UK"
-                      class="carousel-item__slide-image"
-                    />
-                  </div>
-                </>
+                <div
+                  key={i}
+                  class="slide-item"
+                  data-slick-index={item.index}
+                  aria-hidden={item.hidden}
+                  style={{ width: "100%" }}
+                  tabIndex={item.tabIndex}
+                >
+                  <img
+                    src={item.src}
+                    srcSet={item.setsrc}
+                    alt="The Marine Plant Experts in Ireland the UK"
+                    class="carousel-item__slide-image"
+                  />
+                </div>
               );
             })}
           </div>
