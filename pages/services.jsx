@@ -1,7 +1,7 @@
 import { useDispatch } from "react-redux";
 import { navheader } from "@/redux/action";
 import Image from "next/image";
-function services(props) {
+function Services(props) {
   const dispatch = useDispatch();
   let dummy = [
     "/services/img1.jpg",
@@ -71,4 +71,4 @@ function services(props) {
   );
 }
 
-export default services;
+export default Services;

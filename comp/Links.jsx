@@ -12,6 +12,19 @@ function Links(props) {
           <h1>Services</h1>
         </div>
       );
+    case "gallery":
+      return (
+        <div class="links">
+          <h1>Gallery</h1>
+        </div>
+      );
+    case "contact":
+      return (
+        <div class="links">
+          <h1>Contact</h1>
+        </div>
+      );
+      s;
     case "vessels":
       return <div></div>;
   }

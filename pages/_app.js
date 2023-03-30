@@ -30,9 +30,7 @@ export default function App({ Component, pageProps }) {
       <div class="boxed-container">
         <Provider store={store}>
           <Nav />
-
           <Links />
-
           <Component {...pageProps} />
           <Footer />
         </Provider>
