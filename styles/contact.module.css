@@ -12,12 +12,12 @@
 }
 
 .contact_link > svg {
-  width: 30%;
+  width: 50%;
 }
 
 .wallpaper {
   position: relative;
-  height: 100vh;
+  height: 70vh;
   /* overflow: hidden; */
 }
 
