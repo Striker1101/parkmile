@@ -14,16 +14,6 @@ import allReducers from "@/redux/reducer";
 const store = configureStore({ reducer: allReducers });
 
 export default function App({ Component, pageProps }) {
-  useEffect(() => {
-    document.addEventListener("scroll", () => {
-      var secondMenu = document.getElementById("secondMenu");
-      if (scrollY > 100) {
-        secondMenu.classList.add("is-shown");
-      } else {
-        secondMenu.classList.remove("is-shown");
-      }
-    });
-  }, []);
   return (
     <div style={{ position: "relative" }}>
       <Sticky />

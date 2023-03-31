@@ -47,6 +47,7 @@ export default function Home() {
           content="2023-01-24T12:26:44+00:00"
         />
         <meta name="twitter:card" content="summary_large_image" />
+        <link rel="shortcut icon" href="/icon.svg" type="image/x-icon" />
       </Head>
       <main>
         <Carosal />
