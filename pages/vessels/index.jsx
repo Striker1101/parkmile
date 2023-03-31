@@ -14,10 +14,13 @@ export default function Index() {
       <div className={styles.items}>
         {vessels.indexOne.map((item, i) => {
           return (
-            <div key={item.id} className={styles.item}>
-              <h2>{item.name}</h2>
-              <Image src={item.src} height={400} width={400} alt="boats" />
-            </div>
+            <Link key={item.id} href={"/vessels/" + item.link}>
+              <div className={styles.item}>
+                <h2>{item.name}</h2>
+                <Image src={item.src} height={400} width={400} alt="boats" />
+                <h5>Read more</h5>
+              </div>
+            </Link>
           );
         })}
       </div>
@@ -25,10 +28,11 @@ export default function Index() {
       <div className={styles.items}>
         {vessels.indexTwo.map((item, i) => {
           return (
-            <Link key={item.id} href={"/vessels/" + i}>
+            <Link key={item.id} href={"/vessels/" + item.link}>
               <div className={styles.item}>
                 <h2>{item.name}</h2>
                 <Image src={item.src} height={400} width={400} alt="boats" />
+                <h5>Read more</h5>
               </div>
             </Link>
           );

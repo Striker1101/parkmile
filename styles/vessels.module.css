@@ -3,9 +3,32 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  width: 100%;
+  margin-bottom: 15px;
 }
 
 .items {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  gap: 10px;
+}
+
+.item {
+  height: auto;
+  border: 2px solid rgb(194, 184, 184);
+  transition: transform ease-in-out;
+  width: fit-content;
+  border-top: transparent;
+}
+
+.item:hover {
+  transform: scale(0.9);
+  box-shadow: 3px 3px 3px 2px rgba(0, 0, 0, 0.2);
+}
+
+.item > h5 {
+  color: #c90033;
 }
