@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 function Sticky(props) {
   return (
     <div
@@ -11,7 +12,7 @@ function Sticky(props) {
         <div class="pt-sticky-menu">
           {/* <!-- Logo and site name --> */}
           <div class="pt-sticky-menu__logo">
-            <a href="https://omalleymarineplant.ie/" tabIndex="-1">
+            <Link href="/" tabIndex="-1">
               <Image
                 src="/logo.png"
                 alt=" Marine Plant"
@@ -20,7 +21,7 @@ function Sticky(props) {
                 width="1808"
                 height="455"
               />
-            </a>
+            </Link>
           </div>
           {/* <!-- Main Navigation --> */}
           <nav class="pt-sticky-menu__navigation" aria-label="Main Menu">
@@ -30,72 +31,65 @@ function Sticky(props) {
               role="menubar"
             >
               <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-2744 current_page_item menu-item-24">
-                <a
-                  href="https://omalleymarineplant.ie/"
-                  aria-current="page"
-                  tabIndex="-1"
-                >
+                <Link href="/" aria-current="page" tabIndex="-1">
                   Home
-                </a>
+                </Link>
               </li>
               <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2864">
-                <a href="https://omalleymarineplant.ie/services/" tabIndex="-1">
+                <Link href="/services/" tabIndex="-1">
                   Services
-                </a>
+                </Link>
               </li>
               <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-3221">
-                <a href="https://omalleymarineplant.ie/vessels/" tabIndex="-1">
+                <Link href="/vessels/" tabIndex="-1">
                   Vessels
-                </a>
+                </Link>
                 <ul class="sub-menu">
                   <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3045">
-                    <a
-                      href="https://omalleymarineplant.ie/vessels/mv-james-2/"
-                      tabIndex="-1"
-                    >
+                    <Link href="/vessels/mv-james-2/" tabIndex="-1">
                       MV James
-                    </a>
+                    </Link>
                   </li>
                   <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3504">
-                    <a
-                      href="https://omalleymarineplant.ie/vessels/mv-misneach/"
-                      tabIndex="-1"
-                    >
+                    <Link href="/vessels/mv-misneach/" tabIndex="-1">
                       MV Misneach
-                    </a>
+                    </Link>
                   </li>
                   <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3568">
-                    <a
+                    <Link
                       href="https://omalleymarineplant.ie/vessels/mv-three-fevers/"
                       tabIndex="-1"
                     >
                       MV Three Fevers
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </li>
               <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2867">
-                <a href="https://omalleymarineplant.ie/gallery/" tabIndex="-1">
+                <Link href="/gallery/" tabIndex="-1">
                   Gallery
-                </a>
+                </Link>
               </li>
               <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3236">
-                <a href="https://omalleymarineplant.ie/contact/" tabIndex="-1">
+                <Link
+                  href="https://omalleymarineplant.ie/contact/"
+                  tabIndex="-1"
+                >
                   Contact Us
-                </a>
+                </Link>
               </li>
             </ul>
           </nav>
           {/* <!-- Hamburger Menu for mobile/tablet --> */}
           <div class="pt-sticky-menu__hamburger  d-lg-none">
-            <a
+            <Link
               href="#"
               class="btn  btn-primary  js-pt-sticky-menu-back-to-top-open-menu"
               tabIndex="-1"
             >
               <i class="fa  fa-bars"></i>{" "}
               <span class="pt-sticky-menu__hamburger-text">MENU</span>
-            </a>
+            </Link>
           </div>
         </div>
       </div>

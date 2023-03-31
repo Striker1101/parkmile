@@ -81,3 +81,41 @@ export const carosal_image = [
     tabIndex: "-1",
   },
 ];
+
+export const projects = [
+  {
+    id: 0,
+    name: "Port Service / Navigation Aids",
+    src: "/project/img0.jpg",
+  },
+  {
+    id: 1,
+    name: "Marine Civil Enginerring",
+    src: "/project/img1.jpg",
+  },
+  {
+    id: 2,
+    name: "Aquaculture",
+    src: "/project/img2.jpg",
+  },
+  {
+    id: 3,
+    name: "Cunningham Civil & Marine",
+    src: "/project/img3.jpg",
+  },
+  {
+    id: 4,
+    name: "Parkermiler Taarmacadem",
+    src: "/project/img4.jpg",
+  },
+  {
+    id: 5,
+    name: "Commissioner of irish Ligits",
+    src: "/project/img5.jpg",
+  },
+  {
+    id: 6,
+    name: "Marine Institute",
+    src: "/project/img6.jpg",
+  },
+];

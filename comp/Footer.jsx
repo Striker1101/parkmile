@@ -42,7 +42,7 @@ function Footer() {
                       id="menu-item-2918"
                       class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2918"
                     >
-                      <Link href="/recent-projects">Projects</Link>
+                      <Link href="/projects">Projects</Link>
                     </li>
                     <li
                       id="menu-item-3251"

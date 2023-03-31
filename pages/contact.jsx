@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { useDispatch } from "react-redux";
 import { navheader } from "@/redux/action";
 import styles from "@/styles/contact.module.css";
@@ -6,31 +6,41 @@ import styles from "@/styles/contact.module.css";
 export default function Contact() {
   const dispatch = useDispatch();
   dispatch(navheader("contact"));
+
+  const [currentImg, setCurrentImg] = useState(0);
+  const images = [
+    "/profile/img0.jpg",
+    "/profile/img1.jpg",
+    "/profile/img2.jpg",
+    "/profile/img4.jpg",
+  ];
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentImg((currentImg + 1) % images.length);
+    }, 3000);
+    return () => clearInterval(interval);
+  }, [currentImg]);
+
   return (
     <div>
-      <div class="contact_slide">
-        <div class="wallpaper">
-          <div
-            class="image active"
-            style={{ backgroundImage: "url('/profile/img0.jpg')" }}
-          ></div>
-          <div
-            class="image"
-            style={{ backgroundImage: "url('/profile/img1.jpg')" }}
-          ></div>
-          <div
-            class="image"
-            style={{ backgroundImage: "url('/profile/img2.jpg')" }}
-          ></div>
-          <div
-            class="image"
-            style={{ backgroundImage: "url('/profile/img4.jpg')" }}
-          ></div>
-        </div>
-        <div class="profile">
-          <div class="image">
-            <img src="/profile/img3.jpg" alt="Profile Picture" />
-          </div>
+      <div className={styles.wallpaper}>
+        {images.map((image, index) => (
+          <img
+            key={index}
+            src={image}
+            alt={`Wallpaper ${index}`}
+            className={`${styles.img} ${
+              index === currentImg ? styles.active : ""
+            }`}
+          />
+        ))}
+        <div className={styles.profile}>
+          <img
+            src="/profile/img3.jpg"
+            alt="Profile"
+            className={styles.profileImg}
+          />
         </div>
       </div>
       <div className={styles.contact_links}>
@@ -55,6 +65,29 @@ export default function Contact() {
           </svg>
           <p>bruncehenderson@gmail.com</p>
         </div>
+      </div>
+      <div className={styles.inquire}>
+        <p>Have an enquiry?</p>
+        <h2>Contact Us</h2>
+        <form className={styles.form}>
+          <input placeholder="Name*" type="text" name="name" id="name" />
+          
+          <input
+            placeholder="Phone Number"
+            type="number"
+            name="number"
+            id="number"
+          />
+          <input placeholder="Email" type="email" name="email" id="email" />
+          <textarea
+            placeholder="Message"
+            name="message"
+            id="message"
+            cols="30"
+            rows="10"
+          ></textarea>
+          <input type="submit" value="Send Message" />
+        </form>
       </div>
     </div>
   );

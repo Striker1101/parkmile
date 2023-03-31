@@ -24,7 +24,13 @@ function Links(props) {
           <h1>Contact</h1>
         </div>
       );
-      s;
+    case "projects":
+      return (
+        <div class="links">
+          <h1>Recent Projects</h1>
+        </div>
+      );
+
     case "vessels":
       return <div></div>;
   }
