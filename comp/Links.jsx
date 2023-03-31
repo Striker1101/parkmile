@@ -32,7 +32,18 @@ function Links(props) {
       );
 
     case "vessels":
-      return <div></div>;
+      return (
+        <div class="links">
+          <h1>Vessels</h1>
+        </div>
+      );
+
+    case "mv-james":
+      return (
+        <div class="links">
+          <h1>MV James</h1>
+        </div>
+      );
   }
 }
 

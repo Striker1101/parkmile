@@ -1,3 +1,5 @@
+import MvJames from "@/pages/vessels/mv-James-2";
+
 export const navPoint = "nav";
 
 export const carosal_image = [
@@ -119,3 +121,35 @@ export const projects = [
     src: "/project/img6.jpg",
   },
 ];
+
+export const vessels = {
+  indexOne: [
+    {
+      id: 0,
+      name: " MV James",
+      src: "/vessel/img0.jpg",
+    },
+    {
+      id: 1,
+      name: " MV Misneach",
+      src: "/vessel/img1.jpg",
+    },
+    {
+      id: 2,
+      name: " MV Three Fevers",
+      src: "/vessel/img2.jpg",
+    },
+  ],
+  indexTwo: [
+    {
+      id: 3,
+      name: " MV Tormore",
+      src: "/vessel/img3.jpg",
+    },
+    {
+      id: 4,
+      name: " MV Ture Light",
+      src: "/vessel/img4.jpg",
+    },
+  ],
+};
