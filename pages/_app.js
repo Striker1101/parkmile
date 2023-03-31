@@ -1,6 +1,6 @@
-import Footer from "@/comp/Footer.jsx";
+import Footer from "@/comp/Footer";
 import Nav from "@/comp/Nav.jsx";
-import Sticky from "@/comp/sticky.jsx";
+import Sticky from "@/comp/sticky";
 import "@/styles/theme.css";
 import "@/styles/globals.css";
 import "@/styles/import.css";

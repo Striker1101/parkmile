@@ -1,6 +1,5 @@
 import React from "react";
 import Image from "next/image";
-import { ArrowLeft } from "@material-ui/icons";
 import { carosal_image } from "@/utilitys/data";
 import { useState, useRef, useEffect } from "react";
 import Link from "next/link";
