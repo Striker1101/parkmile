@@ -82,10 +82,10 @@ function Footer() {
               <div class="widget  ">
                 <h4 class="footer-top__heading">Find us on Facebook</h4>
                 <div class="iframe-like-box">
-                  <iframe
+                  {/* <iframe
                     src="//www.facebook.com/plugins/likebox.php?href=https%3A%2F%2Fwww.facebook.com%2Fomalleymarineplant%2F&amp;width=340&amp;height=230&amp;hide_cover=0&amp;show_facepile=1&amp;show_posts=0&amp;small_header=0"
                     frameBorder="0"
-                  ></iframe>
+                  ></iframe> */}
                 </div>
               </div>
             </div>
