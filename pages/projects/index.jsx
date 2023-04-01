@@ -37,7 +37,7 @@ export default function Index() {
                   : `${styles.project} ${styles.halfWidth}`
               }
             >
-              <Link href={"/projects/" + i}>
+              <Link href={"/projects/" + item.link}>
                 <Image src={item.src} alt="image" width={400} height={300} />
                 <h5>{item.name}</h5>
                 <h6>Read more...</h6>

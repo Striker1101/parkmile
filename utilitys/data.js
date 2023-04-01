@@ -87,36 +87,43 @@ export const carosal_image = [
 export const projects = [
   {
     id: 0,
+    link: "port_service_navigation_aids",
     name: "Port Service / Navigation Aids",
     src: "/project/img0.jpg",
   },
   {
+    link: "marine_civil_enginerring",
     id: 1,
     name: "Marine Civil Enginerring",
     src: "/project/img1.jpg",
   },
   {
+    link: "aquaculture",
     id: 2,
     name: "Aquaculture",
     src: "/project/img2.jpg",
   },
   {
+    link: "cunningham_civil_marine",
     id: 3,
     name: "Cunningham Civil & Marine",
     src: "/project/img3.jpg",
   },
   {
+    link: "parkermiler_taarmacadem",
     id: 4,
     name: "Parkermiler Taarmacadem",
     src: "/project/img4.jpg",
   },
   {
     id: 5,
+    link: "commissioner_of _irish_ligits",
     name: "Commissioner of irish Ligits",
     src: "/project/img5.jpg",
   },
   {
     id: 6,
+    link: "marine_institute",
     name: "Marine Institute",
     src: "/project/img6.jpg",
   },

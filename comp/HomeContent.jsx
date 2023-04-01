@@ -128,7 +128,7 @@ function HomeContent() {
                 data-index="4"
               >
                 <Link
-                  href="/projects/aquaculture/"
+                  href="/projects/2/"
                   class="latest-news  latest-news--block"
                 >
                   {/* <!-- Featured Image --> */}
@@ -166,7 +166,7 @@ function HomeContent() {
                 data-index="5"
               >
                 <Link
-                  href="/projects/marine-civil-engineering/"
+                  href="/projects/1/"
                   class="latest-news  latest-news--block"
                 >
                   {/* <!-- Featured Image --> */}
@@ -206,7 +206,7 @@ function HomeContent() {
                 data-index="6"
               >
                 <Link
-                  href="/projects/port-services-navigation-aids/"
+                  href="/projects/0/"
                   class="latest-news  latest-news--block"
                 >
                   {/* <!-- Featured Image --> */}
@@ -248,7 +248,7 @@ function HomeContent() {
                 data-index="7"
               >
                 <Link
-                  href="/projects/michael-tarmacadem/"
+                  href="/projects/4/"
                   class="latest-news  latest-news--block"
                 >
                   {/* <!-- Featured Image --> */}
@@ -288,7 +288,7 @@ function HomeContent() {
                 data-index="8"
               >
                 <Link
-                  href="/projects/cunningham-civil-marine/"
+                  href="/projects/3/"
                   class="latest-news  latest-news--block"
                 >
                   {/* <!-- Featured Image --> */}
@@ -328,7 +328,7 @@ function HomeContent() {
                 data-index="9"
               >
                 <Link
-                  href="/projects/commissioners-of-irish-lights/"
+                  href="/projects/5"
                   class="latest-news  latest-news--block"
                 >
                   {/* <!-- Featured Image --> */}
