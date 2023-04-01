@@ -40,6 +40,11 @@ function Sticky() {
                   Services
                 </Link>
               </li>
+              <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2864">
+                <Link href="/events/" tabIndex="-1">
+                  Events
+                </Link>
+              </li>
               <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-3221">
                 <Link href="/vessels/" tabIndex="-1">
                   Vessels

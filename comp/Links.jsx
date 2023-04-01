@@ -70,6 +70,13 @@ function Links(props) {
           <h1>MV Ture Light</h1>
         </div>
       );
+
+    case "event":
+      return (
+        <div class="links">
+          <h1>Events</h1>
+        </div>
+      );
   }
 }
 

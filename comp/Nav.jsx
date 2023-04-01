@@ -69,6 +69,12 @@ function Nav() {
                   <Link href="/services">Services</Link>
                 </li>
                 <li
+                  id="menu-item-2864"
+                  class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2864"
+                >
+                  <Link href="/events">events</Link>
+                </li>
+                <li
                   id="menu-item-3221"
                   class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-3221"
                   // aria-haspopup="dialogue"
