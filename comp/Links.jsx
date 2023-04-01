@@ -44,6 +44,32 @@ function Links(props) {
           <h1>MV James</h1>
         </div>
       );
+
+    case "mv-Misneach":
+      return (
+        <div class="links">
+          <h1>MV Misneach</h1>
+        </div>
+      );
+
+    case "MvThreeFevers":
+      return (
+        <div class="links">
+          <h1>MV Three Fevers</h1>
+        </div>
+      );
+    case "Mvtormore":
+      return (
+        <div class="links">
+          <h1>MV Tormore</h1>
+        </div>
+      );
+    case "Mvlight":
+      return (
+        <div class="links">
+          <h1>MV Ture Light</h1>
+        </div>
+      );
   }
 }
 
