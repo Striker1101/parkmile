@@ -75,7 +75,7 @@ function Nav() {
                   // aria-expanded="false"
                   tabIndex="0"
                 >
-                  <Link href="/vessels">Vessels</Link>
+                  <Link href="/vessels/">Vessels</Link>
                   <button
                     class="dropdown-toggle dropdown-toggle--close"
                     aria-expanded="false"
