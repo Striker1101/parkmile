@@ -1,5 +1,3 @@
-import MvJames from "@/pages/vessels/mv-James-2";
-
 export const navPoint = "nav";
 
 export const carosal_image = [
@@ -86,46 +84,131 @@ export const carosal_image = [
 
 export const projects = [
   {
+    des: "",
     id: 0,
+    recent: true,
     link: "port_service_navigation_aids",
     name: "Port Service / Navigation Aids",
     src: "/project/img0.jpg",
+    img: [
+      "/project/img00.jpg",
+      "/project/img01.jpg",
+      "/project/img02.jpg",
+      "/project/img03.jpg",
+    ],
+    uses: [
+      "Deployment and retrieval of buoys",
+      "Hydrographic surveys",
+      "Navigation Buoy maintenance",
+    ],
   },
   {
-    link: "marine_civil_enginerring",
+    des: "",
+    recent: true,
+    link: "marine_civil_engineering",
     id: 1,
-    name: "Marine Civil Enginerring",
+    name: "Marine Civil Engineering",
     src: "/project/img1.jpg",
+    img: [
+      "/project/img10.jpg",
+      "/project/img11.jpg",
+      "/project/img12.jpg",
+      "/project/img13.jpg",
+      "/project/img14.jpg",
+    ],
+    uses: [
+      "Carraige of rock armor",
+      "Transfer of cargo and equipment with vessels own cranes and bow loading ramp",
+      "Personnel transfer",
+      "Dive support",
+      "A large amount of modular pontoons available, all road transportable",
+      "Dredging support",
+    ],
   },
   {
+    des: "",
+    recent: false,
     link: "aquaculture",
     id: 2,
     name: "Aquaculture",
     src: "/project/img2.jpg",
+    img: [
+      "/project/img20.jpg",
+      "/project/img21.jpg",
+      "/project/img22.jpg",
+      "/project/img23.jpg",
+      "/project/img24.jpg",
+      "/project/img25.jpg",
+      "/project/img26.jpg",
+      "/project/img27.jpg",
+    ],
+    uses: [
+      "Robotic net washing in conjunction with Leco Marine",
+      "Robotic cage washing in conjunction with Leco Marine",
+      "Net changing",
+      "Grid installation and removal",
+      "Fish treating",
+      "Food transfer",
+      "Fuel transfer",
+    ],
   },
   {
+    des: "Providing support vessel, crew transfer, cargo transfer and fuel transfer to the Kish Bank Lighthouse restoration project.",
+    recent: false,
     link: "cunningham_civil_marine",
     id: 3,
     name: "Cunningham Civil & Marine",
     src: "/project/img3.jpg",
+    img: [
+      // "/project/img00.jpg",
+      // "/project/img01.jpg",
+      // "/project/img02.jpg",
+      // "/project/img03.jpg",
+    ],
+    uses: [
+      // "Deployment and retrieval of buoys",
+      // "Hydrographic surveys",
+      // "Navigation Buoy maintenance",
+    ],
   },
   {
+    des: "Haulage of stone, chips and gravel, trucks and machinery to offshore islands for the upkeep and maintenance of roads",
+    recent: true,
     link: "parkermiler_taarmacadem",
     id: 4,
     name: "Parkermiler Taarmacadem",
     src: "/project/img4.jpg",
+    img: [
+      // "/project/img00.jpg",
+      // "/project/img01.jpg",
+      // "/project/img02.jpg",
+      // "/project/img03.jpg",
+    ],
+    uses: [
+      // "Deployment and retrieval of buoys",
+      // "Hydrographic surveys",
+      // "Navigation Buoy maintenance",
+    ],
   },
   {
+    des: "Channel marker buoys maintenance & service, crew transfer, water transfer",
+    recent: true,
     id: 5,
     link: "commissioner_of _irish_ligits",
     name: "Commissioner of irish Ligits",
     src: "/project/img5.jpg",
+    img: ["/project/img50.jpg", "/project/img51.jpg"],
+    uses: [],
   },
   {
+    des: "Deployment and retrieval of weather buoys",
+    recent: true,
     id: 6,
     link: "marine_institute",
     name: "Marine Institute",
     src: "/project/img6.jpg",
+    img: [],
+    uses: [],
   },
 ];
 

@@ -77,6 +77,13 @@ function Links(props) {
           <h1>Events</h1>
         </div>
       );
+
+    case "recent_project":
+      return (
+        <div class="links">
+          <h1>Recent Projects</h1>
+        </div>
+      );
   }
 }
 

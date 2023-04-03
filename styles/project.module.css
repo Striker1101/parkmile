@@ -1,9 +1,10 @@
 .container {
   margin-bottom: 10px;
+  margin: 0 15px;
   display: grid;
   grid-template-columns: repeat(2, 1fr); /* Two columns */
   grid-template-rows: repeat(3, 1fr) 1fr; /* Three rows and one last row */
-  grid-gap: 10px; /* Margin between divs */
+  grid-gap: 5px; /* Margin between divs */
   justify-items: center; /* Center horizontally */
   align-items: center; /* Center vertically */
 }
@@ -23,7 +24,10 @@
   height: auto;
   border: 2px solid rgb(194, 184, 184);
   transition: transform ease-in-out;
-  width: fit-content;
+}
+.project > a > img {
+  height: 250px;
+  width: 100%;
 }
 .project > a {
   display: flex;
@@ -37,4 +41,54 @@
 }
 .project > a > h6 {
   color: #c90033;
+}
+
+._container,
+._content {
+  margin-top: 8px;
+  display: flex;
+  justify-content: center;
+}
+
+._container {
+  width: 100%;
+  gap: 10px;
+}
+
+@media (max-width: 808px) {
+  ._container {
+    flex-direction: column;
+  }
+}
+._content {
+  place-content: center;
+  place-items: center;
+  flex-direction: column;
+}
+
+._content > img {
+  width: 95%;
+  height: 500px;
+  object-fit: fill;
+}
+
+._imgs {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 10px;
+  gap: 5px;
+}
+
+._links {
+  width: 450px;
+  margin-right: 20px;
+  margin: 0 10px;
+}
+._btn {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 0 10px;
+  gap: 5px;
 }
