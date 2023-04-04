@@ -415,53 +415,34 @@ function HomeContent() {
                       class="siteorigin-widget-tinymce textwidget"
                     >
                       <div
-                        class="ngg-galleryoverview ngg-slideshow"
                         id="ngg-slideshow"
                         style={{ maxWidth: "300px", maxHeight: "300px" }}
                       >
-                        <div
-                          id="ngg-image-0"
-                          class="ngg-gallery-slideshow-image"
-                          style={{ height: "300px" }}
-                        >
-                          <Link href="/gallery/home-gallery">
-                            <Image
-                              height={280}
-                              width={280}
-                              alt="1"
-                              src="/gallery/img1.jpg"
-                              style={{ maxHeight: "280px" }}
-                            />
-                          </Link>
-                        </div>
-                        <div
-                          id="ngg-image-1"
-                          class="ngg-gallery-slideshow-image"
-                          style={{ height: "300px" }}
-                        >
-                          <Link href="/gallery/home-gallery/">
-                            <Image
-                              alt=""
-                              src="/gallery/img2.jpg"
-                              width={280}
-                              height={280}
-                            />
-                          </Link>
-                        </div>
-                        <div
-                          id="ngg-image-2"
-                          class="ngg-gallery-slideshow-image"
-                          style={{ height: "300px" }}
-                        >
-                          <Link href="/gallery/home-gallery/">
-                            <Image
-                              width={280}
-                              height={280}
-                              alt=""
-                              src="/gallery/img3.jpg"
-                            />
-                          </Link>
-                        </div>
+                        <Link class="active" id="item0" href="/gallery/">
+                          <Image
+                            height={280}
+                            width={280}
+                            alt="1"
+                            src="/gallery/img1.jpg"
+                            style={{ maxHeight: "280px" }}
+                          />
+                        </Link>
+                        <Link id="item1" href="/gallery/">
+                          <Image
+                            alt=""
+                            src="/gallery/img2.jpg"
+                            width={280}
+                            height={280}
+                          />
+                        </Link>
+                        <Link id="item2" href="/gallery/">
+                          <Image
+                            width={280}
+                            height={280}
+                            alt=""
+                            src="/gallery/img3.jpg"
+                          />
+                        </Link>
                       </div>
                     </div>
                   </div>
