@@ -13,6 +13,8 @@ export default function Contact() {
     "/profile/img1.jpg",
     "/profile/img2.jpg",
     "/profile/img4.jpg",
+    "/profile/img5.jpg",
+    "/profile/img6.jpg",
   ];
 
   useEffect(() => {
@@ -29,6 +31,7 @@ export default function Contact() {
           <img
             key={index}
             src={image}
+            style={{ objectFit: "contain" }}
             alt={`Wallpaper ${index}`}
             className={`${styles.img} ${
               index === currentImg ? styles.active : ""
@@ -63,7 +66,7 @@ export default function Contact() {
             <title>email-check</title>
             <path d="M13 19C13 15.69 15.69 13 19 13C20.1 13 21.12 13.3 22 13.81V6C22 4.89 21.1 4 20 4H4C2.89 4 2 4.89 2 6V18C2 19.11 2.9 20 4 20H13.09C13.04 19.67 13 19.34 13 19M4 8V6L12 11L20 6V8L12 13L4 8M17.75 22.16L15 19.16L16.16 18L17.75 19.59L21.34 16L22.5 17.41L17.75 22.16" />
           </svg>
-          <p>bruncehenderson@gmail.com</p>
+          <p>brucehenderson@gmail.com</p>
         </div>
       </div>
       <div className={styles.inquire}>
@@ -71,7 +74,7 @@ export default function Contact() {
         <h2>Contact Us</h2>
         <form className={styles.form}>
           <input placeholder="Name*" type="text" name="name" id="name" />
-          
+
           <input
             placeholder="Phone Number"
             type="number"
