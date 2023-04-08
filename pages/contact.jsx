@@ -2,45 +2,79 @@ import React, { useState, useEffect } from "react";
 import { useDispatch } from "react-redux";
 import { navheader } from "@/redux/action";
 import styles from "@/styles/contact.module.css";
-
+import { initializeApp } from "firebase/app";
+import { getFirestore, doc, getDoc, onSnapshot } from "firebase/firestore";
+const firebaseConfig = {
+  apiKey: "AIzaSyDcQs1sYlTUJdnrVawYFlk6FPDWZX5ndTk",
+  authDomain: "parkermile-e1d21.firebaseapp.com",
+  projectId: "parkermile-e1d21",
+  storageBucket: "parkermile-e1d21.appspot.com",
+  messagingSenderId: "802538834506",
+  appId: "1:802538834506:web:236ac1834adc7c3554f4b3",
+};
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+const db = getFirestore(app);
 export default function Contact() {
   const dispatch = useDispatch();
   dispatch(navheader("contact"));
 
   const [currentImg, setCurrentImg] = useState(0);
-  const images = [
-    "/profile/img0.jpg",
-    "/profile/img1.jpg",
-    "/profile/img2.jpg",
-    "/profile/img4.jpg",
-    "/profile/img5.jpg",
-    "/profile/img6.jpg",
-  ];
+  const [getWallpaper, setGetWallpaper] = useState({ Logs: [] });
+  const [getProfile, setGetProfile] = useState({
+    imageUrl: "",
+    publicId: "",
+  });
+  useEffect(() => {
+    const profileRef = doc(db, "profile", "6j4PS2VQxI6MW7HABAL4");
+    const unsubscribe = onSnapshot(profileRef, (doc) => {
+      if (doc.exists()) {
+        setGetProfile(doc.data());
+      } else {
+        console.log("No such document!");
+      }
+    });
+    const wallpaperRef = doc(db, "wallpaper", "VhiE64zwvuFGvC0YhvCC");
+    const unsubscribeWallpaper = onSnapshot(wallpaperRef, (doc) => {
+      if (doc.exists()) {
+        setGetWallpaper(doc.data());
+      } else {
+        console.log("No such document!");
+      }
+    });
+    return () => {
+      unsubscribe();
+      unsubscribeWallpaper();
+    };
+  }, []);
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setCurrentImg((currentImg + 1) % images.length);
+      setCurrentImg((currentImg + 1) % getWallpaper.Logs.length);
     }, 3000);
     return () => clearInterval(interval);
-  }, [currentImg]);
+  }, [currentImg, getWallpaper]);
 
   return (
     <div>
       <div className={styles.wallpaper}>
-        {images.map((image, index) => (
-          <img
-            key={index}
-            src={image}
-            style={{ objectFit: "contain" }}
-            alt={`Wallpaper ${index}`}
-            className={`${styles.img} ${
-              index === currentImg ? styles.active : ""
-            }`}
-          />
-        ))}
+        {getWallpaper.Logs.map((image, index) => {
+          console.log(image.imageUrl);
+          return (
+            <img
+              key={index}
+              src={image.imageUrl}
+              // style={{ objectFit: "contain" }}
+              alt={`Wallpaper ${index}`}
+              className={`${styles.img} ${
+                index === currentImg ? styles.active : ""
+              }`}
+            />
+          );
+        })}
         <div className={styles.profile}>
           <img
-            src="/profile/img3.jpg"
+            src={getProfile.imageUrl}
             alt="Profile"
             className={styles.profileImg}
           />
